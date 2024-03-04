@@ -222,7 +222,6 @@ img {
     height: 90vh;
   }
   .login__img {
-    border-radius: 3.5rem;
     box-shadow: 0 24px 48px hsla(244, 75%, 36%, 0.45);
   }
   .login__form {
