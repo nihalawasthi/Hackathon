@@ -59,9 +59,31 @@
                 </form>
             </div>
         </div>
-
-
-        <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.querySelector(".login__form");
+    const loginButton = document.querySelector(".login__button");
+    const usernameInput = document.getElementById("input-email");
+    const passwordInput = document.getElementById("input-pass");
+
+    loginButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent default form submission
+        
+        // Validate username and password (you can replace this with your validation logic)
+        const username = usernameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        // For simplicity, let's assume username is "admin" and password is "password"
+        if (username === "admin" && password === "password") {
+            // Redirect to home page
+            window.location.href = "C:/My/Projects/Hackathon/PlanSync/Home/index.html";
+        } else {
+            alert("Invalid username or password");
+        }
+    });
+});
+
+        </script>
     </body>
 </html>

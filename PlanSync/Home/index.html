@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/ico" href="../assets/img/logo.ico">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PlanSync</title>
+</head>
+
+<body class="light-mode">
+
+    <header>
+        <a href="#" class="logo">PlanSync_</a>
+        <nav class="navbar">
+            <a href="#Tech">Tech</a>
+            <a href="#Non-Tech">Non-Tech</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i data-lucide="user"></i></button>
+                <div class="dropdown-content">
+                    <a href="user"><i data-lucide="contact"></i> Profile</a>
+                    <a href="user#registered"><i data-lucide="file-stack"></i> Enrolled</a>
+                    <a href=""><i data-lucide="log-out"></i> Logout</a>
+                </div>
+            </div>
+            <a class="switch" onclick="myFunction()">
+                <i id="switch" data-lucide="moon"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div id="Tech" class="section">
+        <h1 class="heading">Tech Clubs</h1>
+    </div>
+    <div class="section">
+        <div class="grid-container">
+            <div class="cwc card">
+                <div class="card-info">
+                    <h2>Cyber</h2>
+                    <p>Worriors Club</p>
+                </div>
+            </div>
+            <div class="ai card">
+                <div class="card-info">
+                    <h2>Artificial</h2>
+                    <p>Intelligance Club</p>
+                </div>
+            </div>
+            <div class="ios card">
+                <div class="card-info">
+                    <h2>IOS</h2>
+                    <p>CLUB</p>
+                </div>
+            </div>
+            <div class="ecom card">
+                <div class="card-info">
+                    <h2>Electronic</h2>
+                    <p>Commerce Club</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Non-Tech" class="section">
+        <h1 class="heading">Non-Tech Clubs</h1>
+    </div>
+    <div class="section">
+        <div class="grid-container">
+            <div class="guju card">
+                <div class="card-info">
+                    <h2>Gujarati</h2>
+                    <p>Club</p>
+                </div>
+            </div>
+            <div class="meraki card">
+                <div class="card-info">
+                    <h2>Meraki</h2>
+                    <p>Club</p>
+                </div>
+            </div>
+            <div class="igni card">
+                <div class="card-info">
+                    <h2>Igniters</h2>
+                    <p>Club</p>
+                </div>
+            </div>
+            <div class="dance card">
+                <div class="card-info">
+                    <h2>Dance</h2>
+                    <p>Club</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        function myFunction() {
+            var body = document.body;
+            body.classList.toggle("light-mode");
+            body.classList.toggle("dark-mode");
+
+            var switchIcon = document.getElementById('switch');
+            switchIcon.dataset.lucide = switchIcon.dataset.lucide === 'moon' ? 'sun' : 'moon';
+            lucide.createIcons();
+        }
+    </script>
+</body>
+
+</html>
